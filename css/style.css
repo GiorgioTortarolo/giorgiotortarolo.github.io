@@ -62,29 +62,33 @@ body {
     color: #444;
 }
 
-/* Contacts */
-.contacts a {
-    margin-right: 15px;
+.contact-row {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Icons */
+.contact-row a i {
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.contact-row a i:hover {
+    color: #000;
+}
+
+/* CV text */
+.cv-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
     text-decoration: none;
     color: #0366d6;
 }
 
-.contacts a:hover {
-    text-decoration: underline;
-}
-
-/* CV Button */
-.cv-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 10px 18px;
-    border: 1px solid #222;
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-}
-
-.cv-button:hover {
-    background-color: #222;
-    color: #fff;
+.cv-link i {
+    font-size: 1.1rem;
 }
