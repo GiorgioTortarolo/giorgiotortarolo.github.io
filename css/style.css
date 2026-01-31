@@ -16,7 +16,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    border-bottom: 1px solid #eee;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -24,7 +23,14 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
-    color: #e6e6e6;
+    color: #e6e6e6cd;
+}
+
+.nav-name-index a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #eee;
 }
 
 .nav-links a {
@@ -34,6 +40,10 @@ body {
 }
 
 .nav-links a:hover {
+    color: #eee;
+}
+
+.nav-name a:hover {
     color: #eee;
 }
 
@@ -75,6 +85,8 @@ body {
 
 .profile-text p {
     line-height: 1.6;
+    font-size: 1rem;
+
     color: #e6e6e6;
 }
 
