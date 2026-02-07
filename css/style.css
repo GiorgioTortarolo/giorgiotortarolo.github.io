@@ -247,17 +247,35 @@ body {
     transform: rotatey(180deg);
 }
 
-#fade-gradient stop:first-child {
+#fade-gradient-left stop:first-child {
     stop-color: black;
 }
 
-#fade-gradient stop:last-child {
+#fade-gradient-left stop:last-child {
     stop-color: white;
 }
 
+#fade-gradient-right stop:first-child {
+    stop-color: black;
+}
+
+#fade-gradient-right stop:last-child {
+    stop-color: white;
+}
+
+/* 
 .mask-rect {
     animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
+} */
+
+.mask-rect-left {
+    animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
 }
+
+.mask-rect-right {
+    animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
+}
+
 
 @keyframes fade-reveal {
     from {
