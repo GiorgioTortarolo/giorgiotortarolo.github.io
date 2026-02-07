@@ -233,40 +233,52 @@ body {
 /* Page header glyph styles */
 
 .closed-shape {
-    height: auto;
+    height: 50px;
     width: 200px;
     stroke-width: 1px;
 
-    --reveal-duration: 3s;
+    --reveal-duration: 2s;
     --reveal-delay: 0s;
     --reveal-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --translate-duration: 2s;
+    --translate-delay: 0s;
+    --translate-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --translate-initial: 15%;
+    --translate-final: 9%;
+    --position-Y: 25%; 
+
+    --change-color-duration: 5s;
+    --change-color-ease: ease-out;
+    --change-color-delay: 1s;
 
 }
 
 .closed-shape.right {
-    transform: rotatey(180deg);
+    animation: translate-right var(--translate-duration) var(--translate-ease) var(--translate-delay) forwards;
+}
+
+.closed-shape.left {
+    animation: translate-left var(--translate-duration) var(--translate-ease) var(--translate-delay) forwards;
 }
 
 #fade-gradient-left stop:first-child {
-    stop-color: black;
+    stop-color: white;
 }
 
 #fade-gradient-left stop:last-child {
-    stop-color: white;
+    stop-color: black;
+    animation: change-color var(--change-color-duration) var(--change-color-ease) var(--change-color-delay) forwards;
 }
 
 #fade-gradient-right stop:first-child {
-    stop-color: black;
-}
-
-#fade-gradient-right stop:last-child {
     stop-color: white;
 }
 
-/* 
-.mask-rect {
-    animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
-} */
+#fade-gradient-right stop:last-child {
+    stop-color: black;
+    animation: change-color var(--change-color-duration) var(--change-color-ease) var(--change-color-delay) forwards;    
+}
 
 .mask-rect-left {
     animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
@@ -276,6 +288,16 @@ body {
     animation: fade-reveal var(--reveal-duration) var(--reveal-ease) var(--reveal-delay) forwards;
 }
 
+@keyframes change-color {
+    from {
+        stop-color: black;
+        
+    }
+
+    to {
+        stop-color: white;
+    }
+}
 
 @keyframes fade-reveal {
     from {
@@ -284,5 +306,25 @@ body {
 
     to {
         x: 0%;
+    }
+}
+
+@keyframes translate-left {
+    from {
+    transform: translateY(var(--position-Y)) translateX(var(--translate-initial)); ;
+    }
+
+    to {
+        transform:  translateY(var(--position-Y)) translateX(var(--translate-final));
+    }
+}
+
+@keyframes translate-right {
+    from {
+    transform: translateY(var(--position-Y)) translateX(calc(-1 * var(--translate-initial))) rotatey(180deg);
+    }
+
+    to {
+        transform:  translateY(var(--position-Y)) translateX(calc(-1 * var(--translate-final))) rotatey(180deg);
     }
 }
