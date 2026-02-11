@@ -312,10 +312,11 @@ h3 {
 
 .projects .project .title {
   color: var(--color-light);
+
   font-size: large;
   font-weight: 400;
   display: block;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .projects .project .subtitle {
@@ -354,6 +355,25 @@ h3 {
   overflow: visible;
   transform: rotateX(180deg);
   fill: white;
+}
+
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.project.active .project-details {
+  max-height: 1000px; /* large enough to fit content */
+}
+
+.project {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: scale(1.01);
 }
 
 /* Page header glyph styles */

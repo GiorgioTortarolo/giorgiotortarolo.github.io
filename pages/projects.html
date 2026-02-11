@@ -113,8 +113,8 @@
         <section class="projects">
           <div class="project">
             <span class="title"
-              >Image Scanning Microscopy (ISM), FLIM & STED Imaging
-              Platform</span
+              >Image Scanning Microscopy platform. Combination with Fluorescence
+              Lifetime and Stimulated Emission Depletion Imaging</span
             >
             <span class="subtitle">Summary</span>
             <span class="description"
@@ -125,84 +125,247 @@
               capabilities. The technology is patented and licensed to Nikon,
               and implemented in commercial microscopy systems.</span
             >
-            <span class="subtitle">Role</span>
+            <div class="project-details">
+              <span class="subtitle">Role</span>
+              <span class="description"
+                >System architecture and implementation, including optical
+                design, detector integration, custom acquisition electronics,
+                real-time control software, and data analysis pipelines. Work
+                carried out in collaboration with Dr. Marco Castello.</span
+              >
+              <span class="subtitle">Technical Highlights</span>
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  Development of an ISM imaging platform leveraging both the
+                  spatial and temporal distributions of fluorescence emission,
+                  sampled by a SPAD array detector and a custom-made acquisition
+                  architecture.
+                </li>
+                <li class="project-highlight">
+                  Design of a digital frequency-domain DAQ module capable of
+                  recording essential spatial and temporal photon features,
+                  enabling time-correlated acquisition without conventional
+                  TCSPC bottlenecks.
+                </li>
+                <li class="project-highlight">
+                  Implementation of ISM reconstruction pipelines improving
+                  spatial resolution and signal-to-noise relative to standard
+                  confocal microscopy.
+                </li>
+                <li class="project-highlight">
+                  Extension to fluorescence lifetime imaging (ISM-FLIM),
+                  enabling simultaneous super-resolution and functional
+                  contrast.
+                </li>
+                <li class="project-highlight">
+                  Support for multi-color and multispecies imaging, including
+                  time-domain encoding of fluorophore excitation spectra for
+                  robust spectral discrimination.
+                </li>
+              </ul>
+              <span class="subtitle"
+                >Related Developments within the Platform</span
+              >
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  STED-ISM: Enhancement of a STED microscope with a detector
+                  array, enabling ISM-based detection to achieve a target
+                  resolution with reduced depletion intensity, improving
+                  photostability and suitability for live imaging.
+                </li>
+                <li class="project-highlight">
+                  Focus-ISM: Development of a strategy to improve optical
+                  sectioning and background rejection in ISM-based techniques,
+                  with or without a STED beam, particularly beneficial for thick
+                  and scattering samples.
+                </li>
+              </ul>
+              <span class="description"
+                >Both approaches require minimal architectural changes to
+                conventional microscopes while providing substantial gains in
+                resolution, contrast, and imaging robustness.</span
+              >
+              <span class="subtitle">Outcome & Impact</span>
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  The ISM technology developed within this project is protected
+                  by patents and licensed to Nikon, where it has been
+                  implemented in commercial microscopy platforms.
+                </li>
+                <li class="project-highlight">
+                  Enabled a unified imaging architecture supporting confocal,
+                  ISM, ISM-FLIM, ISM-STED, and multispecies imaging modalities.
+                </li>
+                <li class="project-highlight">
+                  Provided practical advantages for live-cell functional
+                  imaging, combining resolution enhancement, functional
+                  contrast, and reduced phototoxicity.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <span class="title"
+              >Smart, real-Time Single-Particle Tracking with Time-Resolved
+              Detection</span
+            >
+            <span class="subtitle">Summary</span>
             <span class="description"
-              >System architecture and implementation, including optical design,
-              detector integration, custom acquisition electronics, real-time
-              control software, and data analysis pipelines. Work carried out in
-              collaboration with Dr. Marco Castello.</span
+              >Conceptualization and implementation of a real-time
+              single-particle tracking (SPT) platform based on a confocal laser
+              scanning microscope enhanced with an asynchronous SPAD array
+              detector. The system integrates spatial localization, fluorescence
+              lifetime measurement, and FPGA-driven feedback control to achieve
+              high-precision, high-speed 3D particle tracking in living
+              cells.</span
             >
-            <span class="subtitle">Technical Highlights</span>
-            <ul class="project-highlights">
-              <li class="project-highlight">
-                Development of an ISM imaging platform leveraging both the
-                spatial and temporal distributions of fluorescence emission,
-                sampled by a SPAD array detector and a custom-made acquisition
-                architecture.
-              </li>
-              <li class="project-highlight">
-                Design of a digital frequency-domain DAQ module capable of
-                recording essential spatial and temporal photon features,
-                enabling time-correlated acquisition without conventional TCSPC
-                bottlenecks.
-              </li>
-              <li class="project-highlight">
-                Implementation of ISM reconstruction pipelines improving spatial
-                resolution and signal-to-noise relative to standard confocal
-                microscopy.
-              </li>
-              <li class="project-highlight">
-                Extension to fluorescence lifetime imaging (ISM-FLIM), enabling
-                simultaneous super-resolution and functional contrast.
-              </li>
-              <li class="project-highlight">
-                Support for multi-color and multispecies imaging, including
-                time-domain encoding of fluorophore excitation spectra for
-                robust spectral discrimination.
-              </li>
-            </ul>
-            <span class="subtitle"
-              >Related Developments within the Platform</span
+            <div class="project-details">
+              <span class="subtitle">Role</span>
+              <span class="description"
+                >Project conception and system architecture. Design and
+                construction of a preliminary working platform, including
+                detector integration, FPGA-based real-time feedback control,
+                scanning synchronization, and custom acquisition and analysis
+                software.</span
+              >
+              <span class="subtitle">Technical Highlights</span>
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  Enhancement of a confocal laser scanning microscope with an
+                  asynchronous read-out SPAD array detector, capturing the
+                  spatial distribution of emission photons.
+                </li>
+                <li class="project-highlight">
+                  Real-time localization of the particle position within the
+                  excitation volume based on detector array information.
+                </li>
+                <li class="project-highlight">
+                  Implementation of a closed-loop feedback system, leveraging
+                  FPGA-based control to dynamically adjust the scanning
+                  mechanism and maintain the particle centered within the
+                  excitation focus.
+                </li>
+                <li class="project-highlight">
+                  Combination of single-particle tracking with fluorescence
+                  lifetime measurement, enabled by the independent single-photon
+                  detection capability of each SPAD pixel.
+                </li>
+                <li class="project-highlight">
+                  Achieved 40 nm lateral and 60 nm axial localization precision
+                  with 100 detected photons and sub-millisecond temporal
+                  sampling for real-time tracking. Offline refinement enabling
+                  microsecond-scale temporal precision.
+                </li>
+              </ul>
+              <span class="subtitle"
+                >Related Developments within the Platform</span
+              >
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  Validation of spatiotemporal performance by tracking
+                  fluorescent beads with diffusion coefficients up to 10 μm²/s.
+                </li>
+
+                <li class="project-highlight">
+                  Application to live-cell imaging, tracking lysosome dynamics
+                  in SK-N-BE cells.
+                </li>
+                <li class="project-highlight">
+                  Simultaneous measurement of fluorescence lifetime of
+                  membrane-associated markers during particle tracking.
+                </li>
+                <li class="project-highlight">
+                  Establishment of a framework for future correlative imaging
+                  and dynamic functional studies, combining motion analysis with
+                  molecular contrast.
+                </li>
+              </ul>
+              <span class="subtitle">Outcome & Impact</span>
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  Demonstrated a robust architecture for integrating real-time
+                  localization, lifetime measurement, and adaptive scanning
+                  within a unified platform.
+                </li>
+                <li class="project-highlight">
+                  Advanced the capability of confocal microscopy from passive
+                  observation to active, feedback-driven tracking.
+                </li>
+                <li class="project-highlight">
+                  Provided a scalable foundation for next-generation smart
+                  microscopy systems integrating motion control, functional
+                  imaging, and computational refinement.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <span class="title"
+              >Multiplexed MINFLUX: Prototype Platform for Parallel Nanoscale
+              Tracking</span
             >
-            <ul class="project-highlights">
-              <li class="project-highlight">
-                STED-ISM: Enhancement of a STED microscope with a detector
-                array, enabling ISM-based detection to achieve a target
-                resolution with reduced depletion intensity, improving
-                photostability and suitability for live imaging.
-              </li>
-              <li class="project-highlight">
-                Focus-ISM: Development of a strategy to improve optical
-                sectioning and background rejection in ISM-based techniques,
-                with or without a STED beam, particularly beneficial for thick
-                and scattering samples.
-              </li>
-            </ul>
+            <span class="subtitle">Summary</span>
             <span class="description"
-              >Both approaches require minimal architectural changes to
-              conventional microscopes while providing substantial gains in
-              resolution, contrast, and imaging robustness.</span
+              >Development of a prototype multiplexed MINFLUX (mMINFLUX)
+              microscopy platform aimed at extending the MINFLUX concept from
+              single-molecule localization to parallel nanoscale tracking of
+              multiple emitters. The system leverages adaptive beam shaping and
+              camera-based detection to enable coordinated tracking within a
+              unified imaging architectur</span
             >
-            <span class="subtitle">Outcome & Impact</span>
-            <ul class="project-highlights">
-              <li class="project-highlight">
-                The ISM technology developed within this project is protected by
-                patents and licensed to Nikon, where it has been implemented in
-                commercial microscopy platforms.
-              </li>
-              <li class="project-highlight">
-                Enabled a unified imaging architecture supporting confocal, ISM,
-                ISM-FLIM, ISM-STED, and multispecies imaging modalities.
-              </li>
-              <li class="project-highlight">
-                Provided practical advantages for live-cell functional imaging,
-                combining resolution enhancement, functional contrast, and
-                reduced phototoxicity.
-              </li>
-            </ul>
+            <div class="project-details">
+              <span class="subtitle">Role</span>
+              <span class="description"
+                >Design and implementation of the prototype imaging and tracking
+                platform. Integration of optical components, beam-shaping
+                elements, scanning control, and position reconstruction
+                algorithms. Development of acquisition and tracking software for
+                real-time localization and adaptive coordinate pattern
+                execution.</span
+              >
+              <span class="subtitle">Technical Highlights</span>
+              <ul class="project-highlights">
+                <li class="project-highlight">
+                  Extension of the MINFLUX concept toward parallel tracking,
+                  moving beyond single-emitter operation to multiplexed
+                  configurations within the same field of view.
+                </li>
+                <li class="project-highlight">
+                  Implementation of a Spatial Light Modulator (SLM) for dynamic
+                  generation of excitation patterns, enabling flexible beam
+                  positioning and programmable coordinate patterns.
+                </li>
+                <li class="project-highlight">
+                  Replacement of single-element detection with camera-based
+                  detection, enabling spatial discrimination of multiple
+                  emitters and scalable tracking architectures.
+                </li>
+                <li class="project-highlight">
+                  Development of real-time position estimation algorithms to
+                  compute emitter coordinates from structured illumination
+                  patterns.
+                </li>
+                <li class="project-highlight">
+                  Implementation of a control framework coordinatingexcitation
+                  pattern updates, excitation pattern updates, scanning
+                  mechanisms, localization computation, region-of-interest
+                  management
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
     </main>
+
+    <script>
+      document.querySelectorAll(".project").forEach((project) => {
+        project.addEventListener("click", () => {
+          project.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
