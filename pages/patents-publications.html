@@ -1,74 +1,459 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Patents & Publications | Giorgio Tortarolo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-name-index">
-         <a href="../index.html">Giorgio Tortarolo, PhD</a>
-
-        </div>
-        <div class="nav-links">
-            <a href="projects.html">Projects</a>
-            <a href="experience.html">Experience</a>
-            <a href="skills.html">Skills</a>
-            <a href="patents-publications.html">Patents & Publications</a>
-            <a href="../assets/resume.pdf" target="_blank">Resume</a>
-        </div>
+      <div class="nav-name-index">
+        <a href="../index.html">Giorgio Tortarolo, PhD</a>
+      </div>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="patents-publications.html">Patents & Publications</a>
+        <a href="../assets/resume.pdf" target="_blank">Resume</a>
+      </div>
     </nav>
 
     <!-- Main card -->
     <main class="main">
-        <div class="hero-content">
-
-     <!-- !!!!!!!!!!!!!!!!!!!!!! -->
-    <!-- Page header -->
-
-    <!-- Left glyph -->
-     <div class = 'row-3'>
-    <div class="closed-shape left">
-        <svg viewBox="0 0 279.28 45.3"   xmlns="http://www.w3.org/2000/svg"
->
-            <defs>
-                <linearGradient id="fade-gradient-left" x1="1" y1="0" x2="0" y2="0">
-                    <stop offset="0%" stop-color="black" />
-                    <stop offset="100%" stop-color="white" />
+      <div class="hero-content">
+        <!-- !!!!!!!!!!!!!!!!!!!!!! -->
+        <!-- Page header -->
+        <!-- Left glyph -->
+        <div class="row-3">
+          <div class="closed-shape left">
+            <svg viewBox="0 0 279.28 45.3" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient
+                  id="fade-gradient-left"
+                  x1="1"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                >
+                  <stop offset="0%" stop-color="black" />
+                  <stop offset="100%" stop-color="white" />
                 </linearGradient>
                 <mask id="fade-mask" maskUnits="userSpaceOnUse">
-                    <rect class="mask-rect-left" x="0" y="0" width="279.28" height="45.3" fill="url(#fade-gradient-left)" />
+                  <rect
+                    class="mask-rect-left"
+                    x="0"
+                    y="0"
+                    width="279.28"
+                    height="45.3"
+                    fill="url(#fade-gradient-left)"
+                  />
                 </mask>
-            </defs>
-            <path pathLength="1"
+              </defs>
+              <path
+                pathLength="1"
                 d="M158.08,31.08c-.81.8,2.78,4.59,1.95,7.32-1.21,3.97-4.51-.89-5.98-1.88-1.39-.94-8.94-4.79-9.89-3.45-.18.26.02,1.85-.54,2.89-2.64,4.86-3.89,0-5.49-1.42-7.63-6.77-51.67-9.88-63.24-10.37-9.12-.39-17.98.35-26.91,1.05-5.53.43-10.3-1.04-15.45,2.45-1.77,1.2-3.12,3.63-.5,4.37,2.82.8,6.2-3.17,7.45-1.94s-2.08,5.29-3.63,5.75c-4.44,1.31-11.12-.86-10.35-6.24.2-1.43,2.36-3.16,2.03-3.43-1.99-1.62-14.04,3.36-12.98,7.85l-5.96-.97c-1.4,6.11,7,3.07,7.97,3.93,3.53,3.14-9.44,3.71-13.24,1.76-5.6-2.87-1.73-9.4,2.31-12.05,4.44-2.91,15.91-4.98,21.36-5.47,38.83-3.49,77.14,2.8,115.68,4.92,14.72.81,22.25.7,36.9-.89,8.19-.89,2.3,2.8,3.43,3.87.2.19,4.12-.1,5.43.06,14.15,1.74,38.27,7.57,50.36-1.55,1.84-1.39,1.55-1.85,2.03-3.76.36-1.46,4.43-.8,4.93.9.88,3-3.45,6.02,1.53,5.33s8.62-6.83,8.56-11.3c-.02-1.88-1.35-4.25-.59-5.4,1.96-2.98,6.46,2,7.48.99.53-.52-1.31-3.83-1.79-4.62-1.94-3.12-6.6-6.77,1.12-5.04,1.19.27,3.88,2.53,4.66,1.79,1.28-1.23-4.3-4.71-2.99-5.89.29-.26,3.32.02,4.27.21,16.53,3.21,12.15,23.74-.36,30.69-6.58,3.66-14.27,3.76-19.6,6.22-2.53,1.17-3.32,5.07-5.86,6.02-.89.33-2.65.67-2.37-.86,1.63.48,6.09-3.87,4.98-4.92s-4.94,1.9-6.52,2c-1.28.08-11.27-2.76-4.97,1.96,1.07.8,2.73.54,2.52,1.93-6.08,2.71-10.88-1.12-16.71-2.68-19.95-5.34-37.05-7.3-57.51-9.14-.92-.08-3.02-1.44-3.52-.95Z"
-                mask="url(#fade-mask)" />
-        </svg>
-    </div>
-    <!-- Page title -->
-    <h1>Patents & Publications</h1>
+                mask="url(#fade-mask)"
+              />
+            </svg>
+          </div>
+          <!-- Page title -->
+          <h1 class="page-title">Patents & Know-How</h1>
 
-    <!-- Right glyph -->
-    <div class="closed-shape right">
-        <svg viewBox="0 0 279.28 45.3" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="fade-gradient-right" x1="1" y1="0" x2="0" y2="0">
-                    <stop offset="0%" stop-color="black" />
-                    <stop offset="100%" stop-color="white" />
+          <!-- Right glyph -->
+          <div class="closed-shape right">
+            <svg viewBox="0 0 279.28 45.3" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient
+                  id="fade-gradient-right"
+                  x1="1"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                >
+                  <stop offset="0%" stop-color="black" />
+                  <stop offset="100%" stop-color="white" />
                 </linearGradient>
                 <mask id="fade-mask" maskUnits="userSpaceOnUse">
-                    <rect class="mask-rect-right" x="0" y="0" width="279.28" height="45.3" fill="url(#fade-gradient-right)" />
+                  <rect
+                    class="mask-rect-right"
+                    x="0"
+                    y="0"
+                    width="279.28"
+                    height="45.3"
+                    fill="url(#fade-gradient-right)"
+                  />
                 </mask>
-            </defs>
-            <path pathLength="1"
+              </defs>
+              <path
+                pathLength="1"
                 d="M158.08,31.08c-.81.8,2.78,4.59,1.95,7.32-1.21,3.97-4.51-.89-5.98-1.88-1.39-.94-8.94-4.79-9.89-3.45-.18.26.02,1.85-.54,2.89-2.64,4.86-3.89,0-5.49-1.42-7.63-6.77-51.67-9.88-63.24-10.37-9.12-.39-17.98.35-26.91,1.05-5.53.43-10.3-1.04-15.45,2.45-1.77,1.2-3.12,3.63-.5,4.37,2.82.8,6.2-3.17,7.45-1.94s-2.08,5.29-3.63,5.75c-4.44,1.31-11.12-.86-10.35-6.24.2-1.43,2.36-3.16,2.03-3.43-1.99-1.62-14.04,3.36-12.98,7.85l-5.96-.97c-1.4,6.11,7,3.07,7.97,3.93,3.53,3.14-9.44,3.71-13.24,1.76-5.6-2.87-1.73-9.4,2.31-12.05,4.44-2.91,15.91-4.98,21.36-5.47,38.83-3.49,77.14,2.8,115.68,4.92,14.72.81,22.25.7,36.9-.89,8.19-.89,2.3,2.8,3.43,3.87.2.19,4.12-.1,5.43.06,14.15,1.74,38.27,7.57,50.36-1.55,1.84-1.39,1.55-1.85,2.03-3.76.36-1.46,4.43-.8,4.93.9.88,3-3.45,6.02,1.53,5.33s8.62-6.83,8.56-11.3c-.02-1.88-1.35-4.25-.59-5.4,1.96-2.98,6.46,2,7.48.99.53-.52-1.31-3.83-1.79-4.62-1.94-3.12-6.6-6.77,1.12-5.04,1.19.27,3.88,2.53,4.66,1.79,1.28-1.23-4.3-4.71-2.99-5.89.29-.26,3.32.02,4.27.21,16.53,3.21,12.15,23.74-.36,30.69-6.58,3.66-14.27,3.76-19.6,6.22-2.53,1.17-3.32,5.07-5.86,6.02-.89.33-2.65.67-2.37-.86,1.63.48,6.09-3.87,4.98-4.92s-4.94,1.9-6.52,2c-1.28.08-11.27-2.76-4.97,1.96,1.07.8,2.73.54,2.52,1.93-6.08,2.71-10.88-1.12-16.71-2.68-19.95-5.34-37.05-7.3-57.51-9.14-.92-.08-3.02-1.44-3.52-.95Z"
-                mask="url(#fade-mask)" />
-        </svg>
-    </div>
-</div>
+                mask="url(#fade-mask)"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Page introduction -->
+        <h3 class="page-intro">
+          Co-inventor of multiple patents in super-resolution and time-resolved
+          optical microscopy, with technologies licensed and used in commercial
+          imaging systems.
+        </h3>
+
+        <section class="patents">
+          <ul class="patent-list">
+            <li class="patent">
+              <p class="meta">
+                <span class="title"
+                  >TIME-RESOLVED IMAGING METHOD WITH HIGH SPATIAL
+                  RESOLUTION</span
+                >
+                <span class="description"
+                  >A method for operating high-resolution time-resolved optical
+                  imaging systems, widely adopted in advanced microscopy.</span
+                >
+                <span class="number"
+                  >International application WO2019/145889 A1 (patent family),
+                  with granted patents in key markets including the United
+                  States (US 11,422,348 B2), Europe (EP 3743758 B1), Japan and
+                  China.</span
+                >
+                <span class="special-notes"
+                  >Licensed to Nikon and implemented in the NSPARC commercial
+                  microscope module.
+                  <a
+                    href="https://www.microscope.healthcare.nikon.com/en_EU/products/confocal-microscopes/ax"
+                    target="_blank"
+                    >https://www.microscope.healthcare.nikon.com/en_EU/products/confocal-microscopes/ax</a
+                  ></span
+                >
+              </p>
+            </li>
+            <li class="patent">
+              <p class="meta">
+                <span class="title"
+                  >SIMULTANEOUS MULTI-SPECIES SUPER-RESOLUTION IMAGING VIA
+                  TEMPORAL MULTIPLEXING AND SINGLE- PHOTON DETECTOR ARRAY</span
+                >
+                <span class="description"
+                  >A method for operating high-resolution time-resolved optical
+                  imaging systems, widely adopted in advanced microscopy.</span
+                >
+                <span class="number"
+                  >International application WO2023/275777A1 A1 (patent family),
+                  with granted patents.</span
+                >
+              </p>
+            </li>
+            <li class="patent">
+              <p class="meta">
+                <span class="title"
+                  >STED Super-Resolution Microscopy Technology</span
+                >
+                <span class="description"
+                  >Know-How related to STED fluorescence microscope design and
+                  implementation, licensed to the ISS microscopy company.</span
+                >
+                <a
+                  href="https://iss.com/fluorescence/time-resolved-laser-scanning-confocal-microscopes/alba-sted"
+                  target="_blank"
+                  >https://iss.com/fluorescence/time-resolved-laser-scanning-confocal-microscopes/alba-sted</a
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- Left glyph -->
+        <div class="row-3">
+          <div class="closed-shape left">
+            <svg viewBox="0 0 279.28 45.3" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient
+                  id="fade-gradient-left"
+                  x1="1"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                >
+                  <stop offset="0%" stop-color="black" />
+                  <stop offset="100%" stop-color="white" />
+                </linearGradient>
+                <mask id="fade-mask" maskUnits="userSpaceOnUse">
+                  <rect
+                    class="mask-rect-left"
+                    x="0"
+                    y="0"
+                    width="279.28"
+                    height="45.3"
+                    fill="url(#fade-gradient-left)"
+                  />
+                </mask>
+              </defs>
+              <path
+                pathLength="1"
+                d="M158.08,31.08c-.81.8,2.78,4.59,1.95,7.32-1.21,3.97-4.51-.89-5.98-1.88-1.39-.94-8.94-4.79-9.89-3.45-.18.26.02,1.85-.54,2.89-2.64,4.86-3.89,0-5.49-1.42-7.63-6.77-51.67-9.88-63.24-10.37-9.12-.39-17.98.35-26.91,1.05-5.53.43-10.3-1.04-15.45,2.45-1.77,1.2-3.12,3.63-.5,4.37,2.82.8,6.2-3.17,7.45-1.94s-2.08,5.29-3.63,5.75c-4.44,1.31-11.12-.86-10.35-6.24.2-1.43,2.36-3.16,2.03-3.43-1.99-1.62-14.04,3.36-12.98,7.85l-5.96-.97c-1.4,6.11,7,3.07,7.97,3.93,3.53,3.14-9.44,3.71-13.24,1.76-5.6-2.87-1.73-9.4,2.31-12.05,4.44-2.91,15.91-4.98,21.36-5.47,38.83-3.49,77.14,2.8,115.68,4.92,14.72.81,22.25.7,36.9-.89,8.19-.89,2.3,2.8,3.43,3.87.2.19,4.12-.1,5.43.06,14.15,1.74,38.27,7.57,50.36-1.55,1.84-1.39,1.55-1.85,2.03-3.76.36-1.46,4.43-.8,4.93.9.88,3-3.45,6.02,1.53,5.33s8.62-6.83,8.56-11.3c-.02-1.88-1.35-4.25-.59-5.4,1.96-2.98,6.46,2,7.48.99.53-.52-1.31-3.83-1.79-4.62-1.94-3.12-6.6-6.77,1.12-5.04,1.19.27,3.88,2.53,4.66,1.79,1.28-1.23-4.3-4.71-2.99-5.89.29-.26,3.32.02,4.27.21,16.53,3.21,12.15,23.74-.36,30.69-6.58,3.66-14.27,3.76-19.6,6.22-2.53,1.17-3.32,5.07-5.86,6.02-.89.33-2.65.67-2.37-.86,1.63.48,6.09-3.87,4.98-4.92s-4.94,1.9-6.52,2c-1.28.08-11.27-2.76-4.97,1.96,1.07.8,2.73.54,2.52,1.93-6.08,2.71-10.88-1.12-16.71-2.68-19.95-5.34-37.05-7.3-57.51-9.14-.92-.08-3.02-1.44-3.52-.95Z"
+                mask="url(#fade-mask)"
+              />
+            </svg>
+          </div>
+          <!-- Page title -->
+          <h1 class="page-title">Publications</h1>
+
+          <!-- Right glyph -->
+          <div class="closed-shape right">
+            <svg viewBox="0 0 279.28 45.3" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient
+                  id="fade-gradient-right"
+                  x1="1"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                >
+                  <stop offset="0%" stop-color="black" />
+                  <stop offset="100%" stop-color="white" />
+                </linearGradient>
+                <mask id="fade-mask" maskUnits="userSpaceOnUse">
+                  <rect
+                    class="mask-rect-right"
+                    x="0"
+                    y="0"
+                    width="279.28"
+                    height="45.3"
+                    fill="url(#fade-gradient-right)"
+                  />
+                </mask>
+              </defs>
+              <path
+                pathLength="1"
+                d="M158.08,31.08c-.81.8,2.78,4.59,1.95,7.32-1.21,3.97-4.51-.89-5.98-1.88-1.39-.94-8.94-4.79-9.89-3.45-.18.26.02,1.85-.54,2.89-2.64,4.86-3.89,0-5.49-1.42-7.63-6.77-51.67-9.88-63.24-10.37-9.12-.39-17.98.35-26.91,1.05-5.53.43-10.3-1.04-15.45,2.45-1.77,1.2-3.12,3.63-.5,4.37,2.82.8,6.2-3.17,7.45-1.94s-2.08,5.29-3.63,5.75c-4.44,1.31-11.12-.86-10.35-6.24.2-1.43,2.36-3.16,2.03-3.43-1.99-1.62-14.04,3.36-12.98,7.85l-5.96-.97c-1.4,6.11,7,3.07,7.97,3.93,3.53,3.14-9.44,3.71-13.24,1.76-5.6-2.87-1.73-9.4,2.31-12.05,4.44-2.91,15.91-4.98,21.36-5.47,38.83-3.49,77.14,2.8,115.68,4.92,14.72.81,22.25.7,36.9-.89,8.19-.89,2.3,2.8,3.43,3.87.2.19,4.12-.1,5.43.06,14.15,1.74,38.27,7.57,50.36-1.55,1.84-1.39,1.55-1.85,2.03-3.76.36-1.46,4.43-.8,4.93.9.88,3-3.45,6.02,1.53,5.33s8.62-6.83,8.56-11.3c-.02-1.88-1.35-4.25-.59-5.4,1.96-2.98,6.46,2,7.48.99.53-.52-1.31-3.83-1.79-4.62-1.94-3.12-6.6-6.77,1.12-5.04,1.19.27,3.88,2.53,4.66,1.79,1.28-1.23-4.3-4.71-2.99-5.89.29-.26,3.32.02,4.27.21,16.53,3.21,12.15,23.74-.36,30.69-6.58,3.66-14.27,3.76-19.6,6.22-2.53,1.17-3.32,5.07-5.86,6.02-.89.33-2.65.67-2.37-.86,1.63.48,6.09-3.87,4.98-4.92s-4.94,1.9-6.52,2c-1.28.08-11.27-2.76-4.97,1.96,1.07.8,2.73.54,2.52,1.93-6.08,2.71-10.88-1.12-16.71-2.68-19.95-5.34-37.05-7.3-57.51-9.14-.92-.08-3.02-1.44-3.52-.95Z"
+                mask="url(#fade-mask)"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Page introduction -->
+        <h3 class="page-intro">
+          Selected publications in prestigious journals such as Nature Methods,
+          Nature Communication, Optica, Nanoscale, Advanced Photonics, and
+          Nature Biotechnology
+        </h3>
+
+        <section class="publications">
+          <ul class="publication-list">
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >A robust and versatile platform for image scanning microscopy
+                  enabling super-resolution FLIM</span
+                >
+                <span class="authors"
+                  ><span class="giorgio">G. Tortarolo</span>†, M. Castello†, M.
+                  Buttafava, T. Deguchi, F. Villa, S. Koho, M. Oneto, S.
+                  Pelicci, L. Lanzanò, P. Bianchini, C. J. R. Sheppard, A.
+                  Diaspro, A. Tosi, and G. Vicidomini
+                </span>
+                <span class="journal">Nature Methods</span>
+                <span class="year">2019</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Evaluating image resolution in stimulated emission depletion
+                  microscopy</span
+                >
+                <span class="authors"
+                  ><span class="giorgio">G. Tortarolo</span>†, M. Castello†, A.
+                  Diaspro, S. Koho and G. Vicidomini
+                </span>
+                <span class="journal">Optica</span>
+                <span class="year">2018</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Compact and Effective Photon-Resolved Image Scanning
+                  Microscope</span
+                >
+                <span class="authors"
+                  ><span class="giorgio">G. Tortarolo</span>†, A. Zunino†, S.
+                  Piazza, M. Donato, S. Zappone, A. Pierzynska-Mach, M.
+                  Castello, G. Vicidomini
+                </span>
+                <span class="journal">Advanced Photonics</span>
+                <span class="year">2024</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Focus-ISM for Sharp and Gentle Super-Resolved Microscopy
+                </span>
+                <span class="authors">
+                  <span class="giorgio">G. Tortarolo</span>, A. Zunino, F.
+                  Fersini, M. Castello, S. Piazza, C.J.R. Sheppard, P.
+                  Bianchini, A. Diaspro, S. Koho, G. Vicidomini</span
+                >
+                <span class="journal"> Nature Communications</span>
+                <span class="year">2022</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Smart hybrid microscopy for cell-friendly detection of rare
+                  events</span
+                >
+                <span class="authors"
+                  >W. L. Stepp, <span class="giorgio">G. Tortarolo</span>, J. C.
+                  Landoni, E. B. Durmus, S. N. R. Alvarez, K. M. Douglass, M.
+                  Weigert and S. Manley</span
+                >
+
+                <span class="journal">Nature Communications</span>
+                <span class="year">2026</span>
+              </p>
+            </li>
+
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >4D Single-particle tracking with asynchronous read-out
+                  single-photon avalanche diode array detector</span
+                >
+                <span class="authors"
+                  >A. Bucci, <span class="giorgio">G. Tortarolo</span>, M. O.
+                  Held, L. Bega, E. Perego, F. Castagnetti, I. Bozzoni, E.
+                  Slenders and G. Vicidomini
+                </span>
+
+                <span class="journal">Nature Communications</span>
+                <span class="year">2026</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Photon-separation to enhance the spatial resolution in pulsed
+                  STED microscopy</span
+                >
+                <span class="authors"
+                  ><span class="giorgio">G. Tortarolo</span>, Y. Sun, K. Teng,
+                  Y. Ishitsuka, L. Lanzanò, P. R. Selvin, B. Barbieri, A.
+                  Diaspro and G. Vicidomini
+                </span>
+                <span class="journal">Nanoscale</span>
+                <span class="year">2024</span>
+              </p>
+            </li>
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Optical microscopy gets down to angstroms</span
+                >
+                <span class="authors"
+                  ><span class="giorgio">G. Tortarolo</span> and S. Manley
+                </span>
+                <span class="journal">Nature Biotechnology</span>
+                <span class="year">2022 [not peer-reviewed]</span>
+              </p>
+            </li>
+
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Image scanning microscopy with multiphotonexcitation or
+                  Bessel beam illumination</span
+                >
+                <span class="authors"
+                  >C. J. R. Sheppard, M. Castello,
+                  <span class="giorgio">G. Tortarolo</span>, E. Slenders, T.
+                  Deguchi, S. Koho, G. Vicidomini, and A. Diaspro
+                </span>
+                <span class="journal"
+                  >Journal of the Optical Society of America A</span
+                >
+                <span class="year">2020</span>
+              </p>
+            </li>
+            <!-- <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Pixel reassignment in image scanning microscopy: a
+                  re-evaluation</span
+                >
+                <span class="authors"
+                  >C. J. R. Sheppard, M. Castello,
+                  <span class="giorgio">G. Tortarolo</span>, T. Deguchi, S. V.
+                  Koho, G. Vicidomini, and A. Diaspro
+                </span>
+                <span class="journal"
+                  >Journal of the Optical Society of America A</span
+                >
+                <span class="year">2020</span>
+              </p>
+            </li> -->
+
+            <!-- <li class="publication">
+              <p class="meta">
+                <span class="title">
+                  Image formation in image scanning microscopy, including the
+                  case of two-photon excitation</span
+                >
+                <span class="authors"
+                  >C. J. R. Sheppard, M. Castello,
+                  <span class="giorgio">G. Tortarolo</span>, G. Vicidomini, A.
+                  Diaspro
+                </span>
+                <span class="journal"
+                  >Journal of the Optical Society of America A</span
+                >
+                <span class="year">2017</span>
+              </p>
+            </li> -->
+
+            <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >PRRT2 modulates presynaptic Ca2+ influx by interacting with
+                  P/Q-type channels
+                </span>
+                <span class="authors"
+                  >D. Ferrante, B. Sterlini, C. Prestigio, A. Marte, A. Corradi,
+                  F. Onofri, <span class="giorgio">G. Tortarolo</span>, G.
+                  Vicidomini, A. Petretto, J. Muià, A. Thalhammer, P. Valente,
+                  L. A. Cingolani, F. Benfenati, P. Baldelli
+                </span>
+                <span class="journal"> Cell Reports</span>
+                <span class="year">2021</span>
+              </p>
+            </li>
+            <!-- <li class="publication">
+              <p class="meta">
+                <span class="title"
+                  >Cooled SPAD array detector for low light-dose fluorescence
+                  laser scanning microscopy
+                </span>
+                <span class="authors"
+                  >E. Slenders, E. Perego, M. Buttafava,
+                  <span class="giorgio">G. Tortarolo</span>, E. Conca, S.
+                  Zappone, A. Pierzynska-Mach, F. Villa, E. M. Petrini, A.
+                  Barberis, A. Tosi, G. Vicidomini
+                </span>
+                <span class="journal">Biophysical Reports</span>
+                <span class="year">2021</span>
+              </p>
+            </li>  -->
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
